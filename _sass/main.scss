@@ -1,2 +1,58 @@
-body{
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.min-100vh{
+  min-height: 100vh;
+}
+
+#header{
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/assets/images/background.jpg);
+}
+
+.main-nav {
+  min-height: 56px;
+
+  .navbar-nav {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-mobile-only {
+    display: none;
+  }
+
+  .nav-desktop-only {
+    display: initial;
+  }
+
+  a {
+    color: #daceba !important;
+    font-weight: bold !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-nav {
+    background-color: #343a40;
+
+    .nav-mobile-only {
+      display: initial;
+    }
+    
+    .nav-desktop-only {
+      display: none;
+    }
+
+    .navbar-brand {
+      img {
+        max-height: 56px;
+      }
+    }
+  }
 }
