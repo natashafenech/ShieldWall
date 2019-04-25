@@ -1,3 +1,8 @@
+$base-color: #daceba;
+$dark-color: #6b6357;
+
+@import url("/assets/fonts/viking/viking.css");
+
 *,
 *:focus {
   outline: none !important;
@@ -6,10 +11,45 @@
 body,
 html {
   font-family: "Montserrat", sans-serif;
+  color: $base-color;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+
+h3 {
+  line-height: 1.7em;
+}
+
+a {
+  color: $base-color;
+}
+
+.primary-color {
+  color: $base-color;
+}
+
+.viking {
+  font-family: "viking";
 }
 
 .min-100vh {
   min-height: 100vh;
+}
+
+.min-33vh {
+  min-height: 33vh;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #site {
@@ -19,6 +59,26 @@ html {
     background-size: cover;
     background-position: center center;
     background-image: url(/assets/images/background.jpg);
+  }
+
+  #classes {
+    background-color: $dark-color;
+  }
+
+  #prices {
+    background-color: #333;
+  }
+
+  #timetable {
+    background-color: $dark-color;
+  }
+
+  #contact {
+    background-color: #333;
+  }
+
+  #footer {
+    background-color: #000;
   }
 }
 
@@ -35,18 +95,17 @@ html {
     }
   }
 
-  .nav-link{
-  padding:0.5rem 1.5rem;
+  .nav-link {
+    padding: 0.5rem 1.5rem;
   }
 
   &.scrolled {
-    background: #0000008f;
+    background: rgba(0, 0, 0, 0.9);
 
     .nav-logo {
       img {
         height: 70px;
         padding: 10px 20px;
-
       }
     }
   }
@@ -65,7 +124,7 @@ html {
   }
 
   a {
-    color: #daceba !important;
+    color: $base-color !important;
     font-weight: bold !important;
   }
 }
