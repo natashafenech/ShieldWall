@@ -3,10 +3,10 @@
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
     <title>facebook</title>
     <desc>Created with Sketch.</desc>
-    <g id="Coming-Soon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-Page-Copy-4" transform="translate(-820.000000, -893.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <g id="Group-2" transform="translate(740.000000, 893.000000)">
-                <g id="facebook" transform="translate(80.000000, 0.000000)">
+    <g id="Coming-SoonFB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page-Copy-4FB" transform="translate(-820.000000, -893.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2FB" transform="translate(740.000000, 893.000000)">
+                <g id="facebookFB" transform="translate(80.000000, 0.000000)">
                     <path d="M45.352,0 L2.648,0 C1.186,0 0,1.186 0,2.648 L0,45.352 C0,46.816 1.186,48 2.648,48 L25.636,48 L25.636,29.412 L19.378,29.412 L19.378,22.17 L25.636,22.17 L25.636,16.82 C25.636,10.622 29.424,7.25 34.954,7.25 C37.604,7.25 39.882,7.444 40.546,7.532 L40.546,14.012 L36.704,14.012 C33.704,14.012 33.12,15.454 33.12,17.554 L33.12,22.176 L40.288,22.176 L39.358,29.436 L33.12,29.436 L33.12,48 L45.35,48 C46.816,48 48,46.816 48,45.352 L48,2.648 C48,1.186 46.816,0 45.352,0" id="Path"></path>
                 </g>
             </g>
