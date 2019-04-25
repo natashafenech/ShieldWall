@@ -4,30 +4,42 @@ html {
   overflow-x: hidden;
 }
 
-.min-100vh{
+.min-100vh {
   min-height: 100vh;
 }
 
-#header{
+#header {
   background-color: #000;
   background-size: cover;
   background-position: center center;
   background-image: url(/assets/images/background.jpg);
 }
 
-.main-nav {
+#main-menu {
   min-height: 56px;
+  transition: 0.4s;
+
+  &.scrolled {
+    background: #0000008f;
+
+    .nav-logo {
+      img {
+        transition: 0.4s;
+        max-height: 56px;
+      }
+    }
+  }
 
   .navbar-nav {
     align-items: center;
     justify-content: center;
   }
 
-  .nav-mobile-only {
+  .navbar-brand {
     display: none;
   }
 
-  .nav-desktop-only {
+  .nav-logo {
     display: initial;
   }
 
@@ -38,21 +50,18 @@ html {
 }
 
 @media (max-width: 991.98px) {
-  .main-nav {
+  #main-menu {
     background-color: #343a40;
 
-    .nav-mobile-only {
-      display: initial;
-    }
-    
-    .nav-desktop-only {
-      display: none;
-    }
-
     .navbar-brand {
+      display: initial;
       img {
         max-height: 56px;
       }
+    }
+
+    .nav-logo {
+      display: none;
     }
   }
 }
