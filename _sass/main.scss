@@ -1,31 +1,52 @@
+*,
+*:focus {
+  outline: none !important;
+}
+
 body,
 html {
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 .min-100vh {
   min-height: 100vh;
 }
 
-#header {
-  background-color: #000;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(/assets/images/background.jpg);
+#site {
+  min-width: 320px;
+  #header {
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/assets/images/background.jpg);
+  }
 }
 
 #main-menu {
+  min-width: 320px;
   min-height: 56px;
   transition: 0.4s;
+
+  .nav-logo {
+    img {
+      height: 110px;
+      padding: 15px 20px;
+      transition: 0.4s;
+    }
+  }
+
+  .nav-link{
+  padding:0.5rem 1.5rem;
+  }
 
   &.scrolled {
     background: #0000008f;
 
     .nav-logo {
       img {
-        transition: 0.4s;
-        max-height: 56px;
+        height: 70px;
+        padding: 10px 20px;
+
       }
     }
   }
@@ -51,10 +72,24 @@ html {
 
 @media (max-width: 991.98px) {
   #main-menu {
-    background-color: #343a40;
+    background-color: #0000008f;
+    align-items: center;
+    justify-content: center;
+
+    .navbar-toggler {
+      position: absolute;
+      right: 0;
+      transform: translateX(-50%) translateY(50%);
+      top: 0;
+    }
 
     .navbar-brand {
-      display: initial;
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+
       img {
         max-height: 56px;
       }
