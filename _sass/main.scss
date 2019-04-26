@@ -1,7 +1,7 @@
 $base-color: #daceba;
 $secondary-color: darken($base-color, 10%);
 
-$background-color: #6b6357;
+$background-color: #333333;
 
 *,
 *:focus {
@@ -79,6 +79,17 @@ a {
 }
 
 #site {
+  .load-inner {
+    &.load {
+      .inner {
+        opacity: 1;
+      }
+    }
+    .inner {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+  }
   #header {
     background-color: #000;
     background-size: cover;
@@ -86,7 +97,7 @@ a {
     background-image: url(/assets/images/bg-home.jpg);
     overflow: hidden;
     position: relative;
-    
+
     .inner {
       padding: 100px 0;
     }
@@ -106,6 +117,11 @@ a {
 
   #classes {
     background-color: $background-color;
+    padding: 50px 20px;
+
+    img {
+      padding: 10px;
+    }
   }
 
   #prices {
@@ -113,6 +129,43 @@ a {
     background-size: cover;
     background-position: center center;
     background-image: url(/assets/images/bg-prices.jpg);
+    padding: 50px 20px;
+
+    .price {
+      background: #414042; /* Old browsers */
+      background: -moz-linear-gradient(-45deg, #414042 0%, #09070a 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, #414042 0%, #09070a 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        135deg,
+        #414042 0%,
+        #09070a 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414042', endColorstr='#09070a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      text-align: center;
+      min-width: 220px;
+      min-height: 300px;
+      padding: 20px;
+      position: relative;
+      font-weight: 900;
+
+      &.small {
+        min-height: 150px;
+      }
+
+      .title {
+        position: absolute;
+        top: 20px;
+      }
+
+      .watermark {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom right;
+        opacity: 0.5;
+      }
+    }
   }
 
   #timetable {
