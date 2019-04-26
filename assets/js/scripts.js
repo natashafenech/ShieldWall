@@ -4,6 +4,10 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
     scrollFunction();
+    
+    setTimeout(function(){
+        $("#header-watermark").addClass('load');        
+    }, 0);
 })
 
 function scrollFunction() {

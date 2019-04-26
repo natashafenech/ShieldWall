@@ -1,5 +1,7 @@
 $base-color: #daceba;
-$dark-color: #6b6357;
+$secondary-color: darken($base-color, 10%);
+
+$background-color: #6b6357;
 
 *,
 *:focus {
@@ -26,6 +28,10 @@ h3 {
 
 a {
   color: $base-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
 .primary-color {
@@ -45,6 +51,31 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.fix-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.watermark {
+  background: url("/assets/images/ident-watermark_large.png");
+  width: 562px;
+  height: 978px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+
+  &.load {
+    opacity: 1;
+  }
 }
 
 #site {
@@ -52,26 +83,49 @@ a {
     background-color: #000;
     background-size: cover;
     background-position: center center;
-    background-image: url(/assets/images/background.jpg);
+    background-image: url(/assets/images/bg-home.jpg);
+    overflow: hidden;
+    position: relative;
+    
+    .inner {
+      padding: 100px 0;
+    }
+
+    .fix-bottom {
+      padding: 30px 0;
+
+      a {
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   #classes {
-    background-color: $dark-color;
+    background-color: $background-color;
   }
 
   #prices {
-    background-color: #333;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/assets/images/bg-prices.jpg);
   }
 
   #timetable {
-    background-color: $dark-color;
+    background-color: $background-color;
   }
 
   #contact {
-    background-color: #333;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/assets/images/bg-contact.jpg);
 
     .social {
-
       a {
         padding: 0 5px;
         opacity: 0.8;
@@ -108,7 +162,9 @@ a {
   }
 
   .nav-link {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
+    min-width: 140px;
+    text-align: center;
   }
 
   &.scrolled {
@@ -138,6 +194,10 @@ a {
   a {
     color: $base-color !important;
     font-weight: bold !important;
+
+    &:hover {
+      color: $secondary-color !important;
+    }
   }
 }
 
