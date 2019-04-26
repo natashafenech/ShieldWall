@@ -8,6 +8,10 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#header-watermark").addClass('load');
     }, 0);
+
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
 })
 
 function scrollFunction() {
