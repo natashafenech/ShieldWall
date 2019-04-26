@@ -71,7 +71,7 @@ a {
   right: 0;
   bottom: 0;
   opacity: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity 0.5s ease-in;
 
   &.load {
     opacity: 1;
@@ -87,7 +87,7 @@ a {
     }
     .inner {
       opacity: 0;
-      transition: opacity 1s ease-in;
+      transition: opacity 0.5s ease-in;
     }
   }
   #header {
@@ -117,10 +117,11 @@ a {
 
   #classes {
     background-color: $background-color;
-    padding: 50px 20px;
+    padding: 70px 20px;
 
     img {
       padding: 10px;
+      max-width: 300px;
     }
   }
 
@@ -129,7 +130,7 @@ a {
     background-size: cover;
     background-position: center center;
     background-image: url(/assets/images/bg-prices.jpg);
-    padding: 50px 20px;
+    padding: 70px 20px;
 
     .price {
       background: #414042; /* Old browsers */
@@ -143,13 +144,13 @@ a {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414042', endColorstr='#09070a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       text-align: center;
       min-width: 220px;
-      min-height: 300px;
+      min-height: 280px;
       padding: 20px;
       position: relative;
       font-weight: 900;
 
       &.small {
-        min-height: 150px;
+        min-height: 140px;
       }
 
       .title {
@@ -170,6 +171,7 @@ a {
 
   #timetable {
     background-color: $background-color;
+    padding: 70px 20px;
   }
 
   #contact {
@@ -177,6 +179,7 @@ a {
     background-size: cover;
     background-position: center center;
     background-image: url(/assets/images/bg-contact.jpg);
+    padding: 70px 20px;
 
     .social {
       a {

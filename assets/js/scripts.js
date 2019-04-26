@@ -20,9 +20,7 @@ function scrollFunction() {
     $('section').each(function () {
         var data = $(this).data('id');
 
-        if ($(this).offset().top < window.pageYOffset + 10 && $(this).offset().top + $(this).height() > window.pageYOffset + 10) {
-            window.location.hash = data;
-        }
+       
 
         if ($(this).offset().top < window.pageYOffset + (window.innerHeight/2) && $(this).offset().top + $(this).height() > window.pageYOffset + (window.innerHeight/2)) {
             if ($(this).hasClass('load-inner')) {
