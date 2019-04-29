@@ -139,6 +139,10 @@ a {
     background-position: center center;
     background-image: url(/assets/images/bg-prices.jpg);
     padding: 80px 20px;
+    
+    .container {
+      max-width: 960px;
+    }
 
     .price {
       background: #414042; /* Old browsers */
