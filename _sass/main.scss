@@ -176,6 +176,9 @@ a {
     overflow: hidden;
     position: relative;
 
+    .accordian-only {
+      display: none;
+    }
     .inner {
       position: relative;
       z-index: 9;
@@ -195,11 +198,11 @@ a {
         font-weight: bold;
 
         &.cell-time {
-          color:#ffffff;
+          color: #ffffff;
         }
 
         &.cell-day {
-          color:#ffffff;
+          color: #ffffff;
         }
 
         &.cell-slot {
@@ -216,16 +219,15 @@ a {
         }
       }
 
-      &.today{
-
+      &.today {
         .cell {
           &.cell-slot {
-            color:$background-color;
+            color: $background-color;
 
             &:nth-child(odd) {
               background: #c8b699cc;
             }
-  
+
             &:nth-child(even) {
               background: #dacebacc;
             }
@@ -350,6 +352,57 @@ a {
 
     .nav-logo {
       display: none;
+    }
+  }
+
+  #timetable {
+    .accordian-only {
+      display: block !important;
+    }
+
+    .accordian-hide {
+      display: none !important;
+    }
+
+    .col {
+      width: 100% !important;
+      flex-basis: auto !important;
+
+      /* 
+      .slots{
+        display: none;
+      }
+      &.today{
+        .slots{
+        display:block;
+        }
+      }*/
+
+      .cell {
+        &.cell-day {
+          color: #ffffff !important;
+          background: $secondary-color;
+          cursor: pointer !important;
+        }
+
+        &.cell-slot {
+          text-align: right;
+          color: $base-color !important;
+
+          .small-time {
+            display: inline-block;
+            float: left;
+          }
+
+          &:nth-child(odd) {
+            background: #111111cc !important;
+          }
+
+          &:nth-child(even) {
+            background: #222222cc !important;
+          }
+        }
+      }
     }
   }
 }

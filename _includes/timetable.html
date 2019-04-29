@@ -1,11 +1,12 @@
 <section data-id="timetable" id="timetable" class="min-100vh flex-center-center load-inner">
     <div class="inner">
         <h1 class="viking">Timetable</h1>
-        <h5 class="primary-color">Visit us for a CrossFit Class or during Open Box</h5>
+        <h5 class="primary-color">Visit us for one of our CrossFit classes or come do your own thing during Open Box hours
+        </h5>
         <div style="height:50px"></div>
         <div class="container">
             <div class="row">
-                <div class="times col">
+                <div class="times col accordian-hide">
                     <div class="cell viking">
                         &nbsp;
                     </div>
@@ -18,20 +19,21 @@
                     <div class="cell-day cell viking">
                         {{day}}
                     </div>
-                    {% for time in site.data.timetable.times %}
-                    <div class="cell-slot cell">
+                    <div class="slots">
+                        {% for time in site.data.timetable.times %}
                         {% assign slot = site.data.timetable.timetable[day][time] %}
                         {% if slot%}
-                        <div>
+                        <div class="cell-slot cell">
+                            <span class="accordian-only small-time">{{time}}</span>
                             {{slot}}
                         </div>
                         {% else %}
-                        <div>
+                        <div class="cell-slot cell accordian-hide">
                             &nbsp;
                         </div>
                         {% endif %}
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
 
                 {% endfor %}
