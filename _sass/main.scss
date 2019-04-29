@@ -33,6 +33,10 @@ h4 {
   line-height: 1.5em;
 }
 
+h5 {
+  line-height: 1.3em;
+}
+
 a {
   color: $base-color;
 
@@ -98,6 +102,11 @@ a {
     }
   }
 
+  .sub-text {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
   #header {
     background-color: #000;
     background-size: cover;
@@ -139,7 +148,7 @@ a {
     background-position: center center;
     background-image: url(/assets/images/bg-prices.jpg);
     padding: 80px 20px;
-    
+
     .container {
       max-width: 960px;
     }
