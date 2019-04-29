@@ -2,7 +2,7 @@
     {
         "name": "",
         "price": "€10",
-        "duration": "PER SESSION",
+        "duration": "DROP IN",
         "width": "6",
         "class": "small"
     },
@@ -14,14 +14,14 @@
         "class": "small"
     },
     {
-        "name": "Thor",
+        "name": "Loki",
         "price": "€80",
         "duration": "1 MONTH",
         "width": "4",
         "class": ""
     },
     {
-        "name": "Loki",
+        "name": "Thor",
         "price": "€210",
         "duration": "3 MONTHS",
         "width": "4",
