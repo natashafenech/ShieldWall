@@ -17,7 +17,12 @@ $(document).ready(function () {
     var today = new Date();
     var dayName = days[today.getDay()];
 
-    $("#timetable .col-day-" + dayName).addClass('today');
+    $("#timetable .col-day-" + dayName).addClass('today').addClass('accordian-open');
+
+    $(".cell-day").click(function(){
+        $(".accordian-open").removeClass("accordian-open");
+        $(this).parents(".col-day").addClass("accordian-open");
+    })
 })
 
 function scrollFunction() {

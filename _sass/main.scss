@@ -1,6 +1,9 @@
 $base-color: #daceba;
 $secondary-color: #c8b699;
 
+$base-color-opacity: #dacebacc;
+$secondary-color-opacity: #c8b699cc;
+
 $background-color: #333333;
 
 *,
@@ -225,11 +228,11 @@ a {
             color: $background-color;
 
             &:nth-child(odd) {
-              background: #c8b699cc;
+              background: $secondary-color-opacity;
             }
 
             &:nth-child(even) {
-              background: #dacebacc;
+              background: $base-color-opacity;
             }
           }
         }
@@ -368,21 +371,26 @@ a {
       width: 100% !important;
       flex-basis: auto !important;
       font-size: 1.2em !important;
+      margin-bottom: 5px !important;
 
-      /* 
-      .slots{
-        display: none;5
+      .slots {
+        display: none;
       }
-      &.today{
-        .slots{
-        display:block;
+
+      &.accordian-open {
+        .slots {
+          display: block;
         }
-      }*/
+
+        .cell-day {
+          background: $secondary-color-opacity !important;
+        }
+      }
 
       .cell {
         &.cell-day {
-          color: #ffffff !important;
-          background: $secondary-color;
+          color: $background-color !important;
+          background: $base-color-opacity;
           cursor: pointer !important;
         }
 
