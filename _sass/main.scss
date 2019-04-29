@@ -1,5 +1,5 @@
 $base-color: #daceba;
-$secondary-color: darken($base-color, 10%);
+$secondary-color: #c8b699;
 
 $background-color: #333333;
 
@@ -90,6 +90,7 @@ a {
       transition: opacity 0.5s ease-in;
     }
   }
+
   #header {
     background-color: #000;
     background-size: cover;
@@ -172,6 +173,66 @@ a {
   #timetable {
     background-color: $background-color;
     padding: 80px 20px;
+    overflow: hidden;
+    position: relative;
+
+    .inner {
+      position: relative;
+      z-index: 9;
+    }
+
+    .container {
+    }
+
+    .col {
+      padding: 0;
+      margin: 0;
+
+      .cell {
+        padding: 0;
+        margin: 0;
+        padding: 10px 15px;
+        font-weight: bold;
+
+        &.cell-time {
+          color:#ffffff;
+        }
+
+        &.cell-day {
+          color:#ffffff;
+        }
+
+        &.cell-slot {
+          white-space: nowrap;
+          color: $base-color;
+
+          &:nth-child(odd) {
+            background: #111111cc;
+          }
+
+          &:nth-child(even) {
+            background: #222222cc;
+          }
+        }
+      }
+
+      &.today{
+
+        .cell {
+          &.cell-slot {
+            color:$background-color;
+
+            &:nth-child(odd) {
+              background: #c8b699cc;
+            }
+  
+            &:nth-child(even) {
+              background: #dacebacc;
+            }
+          }
+        }
+      }
+    }
   }
 
   #contact {

@@ -5,46 +5,16 @@
         <div style="height:50px"></div>
         <div class="container">
             <div class="row">
-                <div class="col mb-4 col-md-6">
-                    <div class="price small flex-center-center">
-                        <h1 class="primary-color">€10</h1>
-                        <h4 class="primary-color">PER SESSION</h4>
+                {% for package in site.data.packages %}
+                <div class="col mb-4 col-md-{{ package.width }}">
+                    <div class="price {{ package.class }} flex-center-center">
+                        <h4 class="title">{{ package.name }}</h4>
+                        <h1 class="primary-color">{{ package.price }}</h1>
+                        <h4 class="primary-color">{{ package.duration }}</h4>
                         <div class="watermark"></div>
                     </div>
                 </div>
-                <div class="col mb-4 col-md-6">
-                    <div class="price small flex-center-center">
-                        <h1 class="primary-color">€70</h1>
-                        <h4 class="primary-color">10 SESSIONS</h4>
-                        <div class="watermark"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col  mb-4 col-md-4">
-                    <div class="price flex-center-center">
-                        <h4 class="title">Demi-God</h4>
-                        <h1 class="primary-color">€160</h1>
-                        <h4 class="primary-color">3 MONTHS</h4>
-                        <div class="watermark"></div>
-                    </div>
-                </div>
-                <div class="col  mb-4 col-md-4">
-                    <div class="price flex-center-center">
-                        <h4 class="title">Odin</h4>
-                        <h1 class="primary-color">€360</h1>
-                        <h4 class="primary-color">6 MONTHS</h4>
-                        <div class="watermark"></div>
-                    </div>
-                </div>
-                <div class="col  mb-4 col-md-4">
-                    <div class="price flex-center-center">
-                        <h4 class="title">Ragnarok</h4>
-                        <h1 class="primary-color">€660</h1>
-                        <h4 class="primary-color">12 MONTHS</h4>
-                        <div class="watermark"></div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

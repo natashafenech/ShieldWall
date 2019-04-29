@@ -1,0 +1,37 @@
+[
+    {
+        "name": "",
+        "price": "€10",
+        "duration": "PER SESSION",
+        "width": "6",
+        "class": "small"
+    },
+    {
+        "name": "",
+        "price": "€70",
+        "duration": "10 SESSIONS",
+        "width": "6",
+        "class": "small"
+    },
+    {
+        "name": "Thor",
+        "price": "€80",
+        "duration": "1 MONTH",
+        "width": "4",
+        "class": ""
+    },
+    {
+        "name": "Loki",
+        "price": "€210",
+        "duration": "3 MONTHS",
+        "width": "4",
+        "class": ""
+    },
+    {
+        "name": "Odin",
+        "price": "€360",
+        "duration": "6 MONTHS",
+        "width": "4",
+        "class": ""
+    }
+]

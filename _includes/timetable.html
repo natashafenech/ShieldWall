@@ -1,6 +1,43 @@
-<section data-id="timetable" id="timetable" class="min-100vh flex-center-center">
+<section data-id="timetable" id="timetable" class="min-100vh flex-center-center load-inner">
     <div class="inner">
         <h1 class="viking">Timetable</h1>
+        <h5 class="primary-color">Visit us for a CrossFit Class or during Open Box</h5>
         <div style="height:50px"></div>
+        <div class="container">
+            <div class="row">
+                <div class="times col">
+                    <div class="cell viking">
+                        &nbsp;
+                    </div>
+                    {% for time in site.data.timetable.times %}
+                    <div class="cell-time cell viking">{{time}}</div>
+                    {% endfor %}
+                </div>
+                {% for day in site.data.timetable.days %}
+                <div class="col col-day col-day-{{day}}">
+                    <div class="cell-day cell viking">
+                        {{day}}
+                    </div>
+                    {% for time in site.data.timetable.times %}
+                    <div class="cell-slot cell">
+                        {% assign slot = site.data.timetable.timetable[day][time] %}
+                        {% if slot%}
+                        <div>
+                            {{slot}}
+                        </div>
+                        {% else %}
+                        <div>
+                            &nbsp;
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
     </div>
+    <div id="timetable-watermark" class="watermark load"></div>
+
 </section>
