@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 
 a {
@@ -114,6 +114,8 @@ a {
 
     .inner {
       padding: 100px 0;
+      position: relative;
+      z-index: 9;
     }
 
     .fix-bottom {
@@ -379,8 +381,8 @@ a {
     font-size: 14px;
   }
 
-  h1{
-  font-size: 2.5em;
+  h1 {
+    font-size: 2.5em;
   }
   #main-menu {
     background-color: #0000008f;
