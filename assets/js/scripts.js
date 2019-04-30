@@ -334,3 +334,12 @@ function initMap() {
     // The marker, positioned at Uluru
     var marker = new google.maps.Marker({ position: uluru, map: map });
 }
+
+window.fbAsyncInit = function() {
+  FB.init({
+    appId            : '343996416465983',
+    autoLogAppEvents : true,
+    xfbml            : true,
+    version          : 'v3.2'
+  });
+};

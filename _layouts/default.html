@@ -25,6 +25,28 @@
 </head>
 
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v3.2'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="385810985158466" theme_color="#c8b699">
+  </div>
+
   <div id="site" class="loading">
     {{ content }}
 
@@ -40,6 +62,7 @@
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHbGpoN62au8O_SyErBY9hLycxQ0OkvTU&callback=initMap"
       type="text/javascript"></script>
+
     <script src="/assets/js/scripts.js?{{
           site.time | date: '%s%N'
         }}"></script>
@@ -50,9 +73,9 @@
       // Check compatibility for the browser we're running this in
       if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
-          console.log(
+          /*console.log(
             "[PWA Builder] active service worker found, no need to register"
-          );
+          );*/
         } else {
           // Register the service worker
           navigator.serviceWorker
@@ -60,14 +83,23 @@
               scope: "./"
             })
             .then(function (reg) {
-              console.log(
+              /*console.log(
                 "[PWA Builder] Service worker has been registered for scope: " +
                 reg.scope
-              );
+              );*/
             });
         }
       }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139316817-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-139316817-1');
+    </script>
+
   </div>
 </body>
 
