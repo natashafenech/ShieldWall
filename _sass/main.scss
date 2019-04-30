@@ -299,10 +299,17 @@ a {
           .social {
             a {
               margin: 0 10px;
-              opacity: 0.8;
               zoom: 0.8;
-              &:hover {
-                opacity: 1;
+              text-decoration: none;
+
+              path {
+                fill: $base-color;
+              }
+
+              &:hover{
+                path {
+                  fill: $secondary-color;
+                }
               }
             }
           }
