@@ -261,7 +261,6 @@ a {
     padding: 80px 20px;
 
     .container {
-      width: 960px;
       min-width: 60vw;
 
       .row {
@@ -270,6 +269,7 @@ a {
           padding: 0;
           margin: 0;
           min-height: 200px;
+          min-width: 200px;
 
           #map {
             height: 100%;
