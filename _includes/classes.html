@@ -1,33 +1,17 @@
 <section data-id="classes" id="classes" class="min-100vh flex-center-center load-inner">
     <div class="inner">
         <h1 class="viking">Classes</h1>
-        <h5 class="primary-color sub-text">What the Gods offer at ShieldWall</h4>
+        <h5 class="primary-color sub-text">What the Gods offer at ShieldWall</h5>
         <div style="height:50px"></div>
         <div class="row">
+            {% for class in site.data.classes %}
             <div class="col col-md-6 col-xl-3">
-                <img src="/assets/images/class-1.jpg" />
+                <img src="{{ class.imageURL }}" />
                 <div style="height:20px"></div>
-                <h4 class="primary-color viking">GYMNASTICS</h3>
-                <div style="height:20px"></div>
+                <h4 class="primary-color viking">{{ class.name }}</h3>
+                    <div style="height:20px"></div>
             </div>
-            <div class="col col-md-6 col-xl-3">
-                <img src="/assets/images/class-3.jpg" />
-                <div style="height:20px"></div>
-                <h4 class="primary-color viking">FUNCTIONAL FITNESS</h3>
-                <div style="height:20px"></div>
-            </div>
-            <div class="col col-md-6 col-xl-3">
-                <img src="/assets/images/class-4.jpg" />
-                <div style="height:20px"></div>
-                <h4 class="primary-color viking">WEIGHTLIFTING</h3>
-                <div style="height:20px"></div>
-            </div>
-            <div class="col col-md-6 col-xl-3">
-                <img src="/assets/images/class-2.jpg" />
-                <div style="height:20px"></div>
-                <h4 class="primary-color viking">OPEN BOX</h3>
-                <div style="height:20px"></div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
