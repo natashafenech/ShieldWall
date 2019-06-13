@@ -119,13 +119,31 @@ a {
     }
 
     .fix-bottom {
-      padding: 30px 0;
-
       a {
         opacity: 0.8;
 
         &:hover {
           opacity: 1;
+        }
+      }
+
+      &.sticker{
+        padding: 60px 0;
+      }
+
+      &.buy{
+        padding: 8px 0;
+        background: #00000099;
+        text-align: center;
+        z-index: 999;
+        bottom:0;
+        width:100%;
+        color: $base-color;
+        text-decoration: none;
+
+        &:hover{
+          color: $secondary-color;
+          background: #000000;
         }
       }
     }
@@ -328,6 +346,8 @@ a {
     }
   }
 }
+
+
 
 #main-menu {
   min-width: 320px;
