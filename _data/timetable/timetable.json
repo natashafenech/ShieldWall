@@ -53,7 +53,8 @@
         "16:00": "Open Box",
         "17:15": "Open Box",
         "18:30": "Open Box",
-        "20:00": "Closed"
+        "20:00": "Open Box",
+        "20:30": "Closed"
     },
     "SAT": {
         "09:30": "Beginners",
