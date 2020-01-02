@@ -1,18 +1,18 @@
 [
     {
         "name": "GYMNASTICS",
-        "imageURL": "/assets/images/thumb-1.jpg"
+        "imageURL": "/assets/images/thumb-new-1.jpg"
     },
     {
         "name": "FUNCTIONAL FITNESS",
-        "imageURL": "/assets/images/thumb-3.jpg"
+        "imageURL": "/assets/images/thumb-new-2.jpg"
     },
     {
         "name": "WEIGHTLIFTING",
-        "imageURL": "/assets/images/thumb-4.jpg"
+        "imageURL": "/assets/images/thumb-new-3.jpg"
     },
     {
         "name": "OPEN BOX",
-        "imageURL": "/assets/images/thumb-2.jpg"
+        "imageURL": "/assets/images/thumb-new-4.jpg"
     }
 ]
