@@ -94,6 +94,20 @@ a {
   }
 }
 
+.button {
+  padding: 10px 20px;
+  background: #000;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    background: $secondary-color;
+    color: #000;
+  text-decoration: none;
+
+  }
+}
+
 #site {
   .load-inner {
     &.load {
@@ -280,7 +294,15 @@ a {
   }
 
   #widget {
-    > div {
+    padding: 100px;
+    background: #111;
+    text-align: center;
+
+    .inner {
+    }
+
+    .outer {
+      display: none;
     }
   }
 
@@ -511,7 +533,12 @@ a {
 
   #site {
     #widget {
-      display: none !important;
+      .inner {
+        display: none !important;
+      }
+      .outer {
+        display: block !important;
+      }
     }
   }
 }
