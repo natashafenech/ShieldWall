@@ -422,6 +422,7 @@ a {
   h1 {
     font-size: 2.5em;
   }
+
   #main-menu {
     background-color: #0000008f;
     align-items: center;
@@ -505,6 +506,12 @@ a {
           }
         }
       }
+    }
+  }
+
+  #site {
+    #widget {
+      display: none !important;
     }
   }
 }
