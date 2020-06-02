@@ -62,6 +62,14 @@ a {
   flex-direction: column;
 }
 
+.flex-center-top {
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  text-align: center;
+  flex-direction: column;
+}
+
 .fix-bottom {
   position: absolute;
   bottom: 0;
@@ -127,21 +135,21 @@ a {
         }
       }
 
-      &.sticker{
+      &.sticker {
         padding: 60px 0;
       }
 
-      &.buy{
+      &.buy {
         padding: 8px 0;
         background: #00000099;
         text-align: center;
         z-index: 999;
-        bottom:0;
-        width:100%;
+        bottom: 0;
+        width: 100%;
         color: $base-color;
         text-decoration: none;
 
-        &:hover{
+        &:hover {
           color: $secondary-color;
           background: #000000;
         }
@@ -271,6 +279,11 @@ a {
     }
   }
 
+  #widget {
+    > div {
+    }
+  }
+
   #contact {
     background-color: #000;
     background-size: cover;
@@ -324,7 +337,7 @@ a {
                 fill: $base-color;
               }
 
-              &:hover{
+              &:hover {
                 path {
                   fill: $secondary-color;
                 }
@@ -346,8 +359,6 @@ a {
     }
   }
 }
-
-
 
 #main-menu {
   min-width: 320px;
