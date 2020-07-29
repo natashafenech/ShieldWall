@@ -3,14 +3,21 @@
         "name": "",
         "price": "€12",
         "duration": "DROP IN",
-        "width": "6",
+        "width": "4",
+        "class": "small"
+    },
+    {
+        "name": "",
+        "price": "€25",
+        "duration": "Personal Training",
+        "width": "4",
         "class": "small"
     },
     {
         "name": "",
         "price": "€75",
         "duration": "10 SESSIONS",
-        "width": "6",
+        "width": "4",
         "class": "small"
     },
     {
