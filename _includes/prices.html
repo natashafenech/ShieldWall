@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 {% for package in site.data.packages %}
-                <div class="col mb-4 col-md-{{ package.width }}">
+                <div class="col mb-4 col-sm-12 col-md-{{ package.width }}">
                     <div class="price {{ package.class }} flex-center-center">
                         <h4 class="title">{{ package.name }}</h4>
                         <h1 class="primary-color">{{ package.price }}</h1>
