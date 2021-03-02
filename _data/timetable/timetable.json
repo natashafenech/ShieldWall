@@ -12,7 +12,6 @@
         "20:30": "Closed"
     },
     "TUE": {
-        "08:30": "Open Box",
         "09:30": "Beginners",        
         "10:30": "Open Box",
         "12:30": "Closed",
@@ -35,7 +34,6 @@
         "20:30": "Closed"        
     },
     "THU": {
-        "08:30": "Open Box",
         "09:30": "Beginners",
         "10:30": "Open Box",
         "12:30": "Closed",
