@@ -38,8 +38,7 @@
         "15:30": "Open Box",
         "17:00": "Beginners",
         "18:00": "Beginners",
-        "19:00": "Beginners",
-        "20:30": "Closed"        
+        "19:00": "Closed"       
     },
     "FRI": {
         "06:00": "CrossFit",
@@ -53,6 +52,7 @@
         "20:30": "Closed"        
     },
     "SAT": {
+        "08:30": "Beginners",
         "09:30": "Beginners",
         "10:30": "Open Box",
         "12:30": "Closed"
