@@ -4,7 +4,7 @@
         "08:30": "Open Box",
         "09:30": "CrossFit",
         "10:30": "Open Box",
-        "12:30": "Closed",
+        "12:00": "Closed",
         "16:00": "Open Box",
         "17:00": "CrossFit",
         "18:00": "CrossFit",
@@ -14,7 +14,7 @@
     "TUE": {
         "09:30": "Skill",        
         "10:30": "Open Box",
-        "12:30": "Closed",
+        "12:00": "Closed",
         "16:00": "Open Box",
         "17:00": "Skill",
         "18:00": "Skill",
@@ -26,7 +26,7 @@
         "08:30": "Open Box",
         "09:30": "CrossFit",
         "10:30": "Open Box",
-        "12:30": "Closed",
+        "12:00": "Closed",
         "16:00": "Open Box",
         "17:00": "CrossFit",
         "18:00": "CrossFit",
@@ -36,7 +36,7 @@
     "THU": {
         "09:30": "Conditioning",
         "10:30": "Open Box",
-        "12:30": "Closed",
+        "12:00": "Closed",
         "16:00": "Open Box",
         "17:00": "Conditioning",
         "18:00": "Conditioning",
@@ -48,7 +48,7 @@
         "08:30": "Open Box",
         "09:30": "CrossFit",
         "10:30": "Open Box",
-        "12:30": "Closed",
+        "12:00": "Closed",
         "16:00": "Open Box",
         "17:00": "Open Box",
         "18:00": "Open Box",
@@ -62,6 +62,6 @@
     },
     "SUN": {
         "09:30": "Team WOD",
-        "11:00": "Closed"
+        "10:30": "Closed"
     }
 }
