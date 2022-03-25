@@ -8,9 +8,10 @@
                 {% for package in site.data.packages %}
                 <div class="col mb-4 col-sm-12 col-md-{{ package.width }}">
                     <div class="price {{ package.class }} flex-center-center">
-                        <h4 class="title">{{ package.name }}</h4>
+                        <h5 class="title">{{ package.name }}</h5>
                         <h1 class="primary-color">{{ package.price }}</h1>
-                        <h4 class="primary-color">{{ package.duration }}</h4>
+                        <h4 class="">{{ package.duration }}</h4>
+                        <h6 class="primary-color">{{ package.text }}</h6>
                         <div class="watermark"></div>
                     </div>
                 </div>

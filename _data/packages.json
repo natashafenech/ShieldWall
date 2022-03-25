@@ -1,14 +1,14 @@
 [
     {
         "name": "",
-        "price": "€12",
+        "price": "€15",
         "duration": "DROP IN",
         "width": "4",
         "class": "small"
     },
     {
         "name": "",
-        "price": "€25",
+        "price": "€30",
         "duration": "Personal Training",
         "width": "4",
         "class": "small"
@@ -21,24 +21,33 @@
         "class": "small"
     },
     {
-        "name": "Loki",
+        "name": "",
         "price": "€85",
         "duration": "1 MONTH",
         "width": "4",
         "class": ""
     },
     {
-        "name": "Thor",
+        "name": "",
         "price": "€230",
         "duration": "3 MONTHS",
         "width": "4",
         "class": ""
     },
     {
-        "name": "Odin",
+        "name": "",
         "price": "€420",
         "duration": "6 MONTHS",
         "width": "4",
         "class": ""
+    }
+    ,
+    {
+        "name": "",
+        "price": "€120",
+        "duration": "24/7 Monthly Unlimited Access",
+        "width": "12",
+        "class": "small",
+        "text": ""
     }
 ]
