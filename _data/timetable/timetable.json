@@ -18,8 +18,7 @@
         "16:00": "Open Box",
         "17:00": "Skill",
         "18:00": "Skill",
-        "19:00": "Beginners",
-        "20:00": "Closed"        
+        "19:00": "Closed",
     },
     "WED": {
         "07:00": "Open Box", 
@@ -61,7 +60,5 @@
         "12:00": "Closed"
     },
     "SUN": {
-        "09:30": "Team WOD",
-        "10:30": "Closed"
     }
 }
