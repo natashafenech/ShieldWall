@@ -2,52 +2,71 @@
     "MON": {
         "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "09:30": "Open Box", 
-        "11:30": "Closed",
-        "16:00": "Full Metal w/Coach",
-        "17:00": "CrossFit w/Coach",
-        "18:00": "Beginners CrossFit"
+        "08:30": "Open Box",
+        "09:30": "CrossFit",
+        "10:30": "Open Box",
+        "12:00": "Closed",
+        "16:00": "Open Box",
+        "17:00": "CrossFit",
+        "18:00": "CrossFit",
+        "19:00": "Beginners",
+        "20:00": "Closed"
     },
     "TUE": {
         "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "09:30": "Open Box", 
-        "11:30": "Closed",
-        "16:00": "Full Metal w/Coach",
-        "17:00": "CrossFit w/Coach",
-        "18:00": "Beginners CrossFit"
+        "08:30": "Open Box",
+        "09:30": "Skill",        
+        "10:30": "Open Box",
+        "12:00": "Closed",
+        "16:00": "Open Box",
+        "17:00": "Skill",
+        "18:00": "Skill",
+        "19:00": "Closed"
     },
     "WED": {
         "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "09:30": "Open Box", 
-        "11:30": "Closed",
-        "16:00": "Full Metal w/Coach",
-        "17:00": "CrossFit w/Coach",
-        "18:00": "Beginners CrossFit"
+        "08:30": "Open Box",
+        "09:30": "CrossFit",
+        "10:30": "Open Box",
+        "12:00": "Closed",
+        "16:00": "Open Box",
+        "17:00": "CrossFit",
+        "18:00": "CrossFit",
+        "19:00": "Beginners",
+        "20:00": "Closed"        
     },
     "THU": {
-        "06:30": "CrossFit", 
+        "06:30": "CrossFit",
         "07:00": "Open Box", 
-        "09:30": "Open Box", 
-        "11:30": "Closed",
+        "08:30": "Open Box",
+        "09:30": "Conditioning",
+        "10:30": "Open Box",
+        "12:00": "Closed",
         "16:00": "Open Box",
-        "17:00": "Aerobic Conditioning",
-        "18:00": "Aerobic Conditioning"
+        "17:00": "Conditioning",
+        "18:00": "Conditioning",
+        "19:00": "Conditioning",
+        "20:00": "Closed"         
     },
     "FRI": {
-        "06:30": "CrossFit", 
-        "07:00": "Open Box", 
-        "09:30": "Open Box", 
-        "11:30": "Closed",
-        "16:00": "Full Metal w/Coach",
-        "17:00": "CrossFit w/Coach",
-        "18:00": "Beginners CrossFit"
+        "06:30": "CrossFit",
+        "07:00": "Open Box",
+        "08:30": "Open Box",
+        "09:30": "Body Building",
+        "10:30": "Open Box",
+        "12:00": "Closed",
+        "16:00": "Open Box",
+        "17:00": "Open Box",
+        "18:00": "Open Box",
+        "19:00": "Closed"    
     },
     "SAT": {
-        "09:30": "Team Workout w/Coach",
+        "08:30": "Team WOD",
+        "09:30": "Team WOD",
         "10:30": "Open Box",
-        "11:30": "Closed"
+        "12:00": "Closed"
     },
     "SUN": {
     }
