@@ -2,71 +2,52 @@
     "MON": {
         "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "08:30": "Open Box",
-        "09:30": "CrossFit",
-        "10:30": "Open Box",
-        "12:00": "Closed",
+        "09:30": "Open Box", 
+        "11:30": "Closed", 
         "16:00": "Open Box",
         "17:00": "CrossFit",
-        "18:00": "CrossFit",
-        "19:00": "Beginners",
-        "20:00": "Closed"
+        "18:00": "Beginners"
     },
     "TUE": {
         "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "08:30": "Open Box",
-        "09:30": "Skill",        
-        "10:30": "Open Box",
-        "12:00": "Closed",
+        "09:30": "Open Box", 
+        "11:30": "Closed", 
         "16:00": "Open Box",
-        "17:00": "Skill",
-        "18:00": "Skill",
-        "19:00": "Closed"
+        "17:00": "CrossFit",
+        "18:00": "Beginners"
     },
     "WED": {
         "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "08:30": "Open Box",
-        "09:30": "CrossFit",
-        "10:30": "Open Box",
-        "12:00": "Closed",
+        "09:30": "Open Box", 
+        "11:30": "Closed", 
         "16:00": "Open Box",
         "17:00": "CrossFit",
-        "18:00": "CrossFit",
-        "19:00": "Beginners",
-        "20:00": "Closed"        
+        "18:00": "Beginners"
     },
     "THU": {
-        "06:30": "CrossFit",
+        "06:30": "CrossFit", 
         "07:00": "Open Box", 
-        "08:30": "Open Box",
-        "09:30": "Conditioning",
-        "10:30": "Open Box",
-        "12:00": "Closed",
+        "09:30": "Open Box", 
+        "11:30": "Closed", 
         "16:00": "Open Box",
         "17:00": "Conditioning",
-        "18:00": "Conditioning",
-        "19:00": "Conditioning",
-        "20:00": "Closed"         
+        "18:00": "Conditioning"
     },
     "FRI": {
-        "06:30": "CrossFit",
-        "07:00": "Open Box",
-        "08:30": "Open Box",
-        "09:30": "Body Building",
-        "10:30": "Open Box",
-        "12:00": "Closed",
+        "06:30": "CrossFit", 
+        "07:00": "Open Box", 
+        "09:30": "Open Box", 
+        "11:30": "Closed", 
         "16:00": "Open Box",
-        "17:00": "Open Box",
-        "18:00": "Open Box",
-        "19:00": "Closed"    
+        "17:00": "CrossFit",
+        "18:00": "Beginners"
     },
     "SAT": {
-        "08:30": "Team WOD",
         "09:30": "Team WOD",
         "10:30": "Open Box",
-        "12:00": "Closed"
+        "11:30": "Closed"
     },
     "SUN": {
     }
